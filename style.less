@@ -1,7 +1,8 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
+
 
 
 
@@ -19,3 +20,57 @@
         vertical-align: bottom;
     }
 }
+
+/** --------------------------------------------------------------
+ *  Responsive design
+ */
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .site-logo-text {
+        width: 40%;
+    }
+
+    .navbar2 {
+        width: 40%;
+    }
+
+    .profile {
+        width: 10%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        //width: 100%;
+        display: none;
+    }
+    .navbar2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .site-logo-text {
+        display: none;
+    }
+    .navbar2 {
+        width: 70%;
+    }
+}
+
+/*
+@media screen and (max-width: 560px) {
+     .site-logo-text {
+         width: 90%;
+     }
+
+     .navbar2 {
+         display: none;
+     }
+ }
+ */
