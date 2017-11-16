@@ -183,3 +183,8 @@ upgrade-responsive-menu:
 	npm update desinax-responsive-menu
 	cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less modules/
 	cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/
+
+# target: upgrade                 - Upgrade external LESS modules.
+.PHONY: upgrade
+upgrade: upgrade-normalize upgrade-responsive-menu
+	@$(call HELPTEXT,$@)
