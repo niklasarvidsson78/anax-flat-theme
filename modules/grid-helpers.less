@@ -1,0 +1,38 @@
+@gridImage: "../img/grid950x24x30x10-nomargin.png";
+//@gridImage: "../img/grid940x12x60x20-nomargin.png";
+
+/*
+.showGrid(@gridMaxwidth: 1200px, @gridImage) {
+    background: @gridImage;
+    background-size: 100% auto;
+    max-width: @gridMaxwidth;
+
+    @media (min-width: @gridMaxwidth) {
+        background-size: @gridMaxwidth auto;
+    }
+}
+
+/*
+*Making a vgrid with ?vgrid at the end of url
+*and when on site typography
+*/
+.vgrid,
+.route-typography {
+    background-image: url(../img/horisontal-grid-24.png);
+}
+
+
+/**
+ * Show grid.
+ */
+.showGrid(@gridWidth) {
+    background: url(../img/grid950x24x30x10-nomargin.png) repeat-y fixed center center;
+    background-size: 100% auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @gridMaxwidth;
+
+    @media (min-width: @gridMaxwidth) {
+        background-size: @gridMaxwidth auto;
+    }
+}

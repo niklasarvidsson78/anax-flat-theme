@@ -1,0 +1,99 @@
+/**
+*Gridbased layout
+*/
+
+@import url(grid-float.less);
+@import url(grid-helpers.less);
+
+@magicNumber:   24px;
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridWidth:     1200px;
+@gridMaxwidth:  1200px;
+
+.route-grid,
+.route-,
+.route-about,
+.route-report,
+.route-typography {
+    width: @gridWidth;
+    .grid(@gridWidth);
+}
+
+.hgrid,
+.route-grid {
+    .showGrid(@gridMaxwidth);
+}
+
+.outer-wrap-header,
+.outer-wrap-main,
+.footer-column-wrapper {
+    margin-bottom: @magicNumber * 2;
+    margin-top: @magicNumber;
+    .column(@columns - 2);
+    .push(1);
+}
+
+.footer-column-wrapper {
+    .clearfix();
+}
+
+.row {
+    .column(@columns);
+}
+
+.site-logo-text {
+    .column(8);
+}
+
+.navbar2 {
+    .column(14);
+}
+
+.flash-wrap img {
+    .column(@columns);
+}
+
+.footer-column {
+    .column((@columns - 2px) / 3);
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: lightskyblue;
+}
+
+.site-footer {
+    .column(@columns - 12);
+    .push(6);
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.site-footer li {
+    .column(@columns - 20);
+    .push(10);
+}
+
+
+//Style grid-page
+.has-sidebar-left {
+    .column(@columns - 5);
+    float: left;
+}
+
+.sidebar-left {
+    .column(@columns - 21);
+    padding-top: 20px;
+    float: left;
+}
+
+
+//Style report-page
+.next {
+    float: right;
+}
+
+.toc, .previous, .next {
+    font-size: 18px;
+}

@@ -4,16 +4,18 @@
 @import url(modules.less);
 
 
-
-
 /** --------------------------------------------------------------
  *  Logo images
- */
+
 .logo-1 {
     position: absolute;
     top: 70px;
     left: -140px;
 }
+
+//body {
+//    background-color: lime;
+//}
 
 .site-logo-text-icon {
     img {
@@ -25,7 +27,7 @@
  *  Responsive design
  */
 img {
-    max-width: 100%;
+    max-width: @gridWidth;
 }
 
 @media screen and (max-width: 1050px) {
@@ -34,7 +36,7 @@ img {
     }
 
     .navbar2 {
-        width: 40%;
+        width: auto;
     }
 
     .profile {
@@ -42,18 +44,17 @@ img {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
+    .footer-column {
+        width: 90%;
+    }
     .site-logo-text {
         display: none;
     }
-    .navbar2 {
-        width: 70%;
-    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 690px) {
     .sidebar {
-        //width: 100%;
         display: none;
     }
     .navbar2 {
@@ -62,19 +63,8 @@ img {
     .footer-column {
         width: 90%;
     }
+    .article img,
+    .article em {
+        display: none;
+    }
 }
-
-
-
-
-/*
-@media screen and (max-width: 560px) {
-     .site-logo-text {
-         width: 90%;
-     }
-
-     .navbar2 {
-         display: none;
-     }
- }
- */
