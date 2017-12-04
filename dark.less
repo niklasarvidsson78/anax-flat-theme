@@ -1,0 +1,34 @@
+@import url(light.less);
+
+@back-color: #010C00;
+@back-color-footer-headerlinks: #0F0000;
+@link-hover: #480002;
+@text-color: white;
+
+html {
+    background-color: @back-color;
+    color: @text-color;
+}
+
+.site-logo-text img {
+    display: none;
+}
+
+.toc a,
+.previous a,
+.next a,
+.breadcrumb-list a {
+    text-decoration: none;
+    color: @text-color;
+}
+
+.footer-column a,
+.site-footer a {
+    color: @link-hover;
+}
+
+.selected a {
+    color: @link-hover;
+    text-decoration: underline;
+    margin-left: 10px;
+}
