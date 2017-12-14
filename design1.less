@@ -1,0 +1,69 @@
+@import url(light.less);
+
+@back-color: rgba(0, 0, 0, 0.5);
+@back-color-footer-headerlinks: rgba(0, 0, 0, 0.5);
+@link-hover: rgba(0, 0, 0, 0.5);
+@text-color: white;
+@text-color2: white;
+
+html {
+    background-image: url(../img/background-blueblack.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+}
+
+html a {
+    color: lightskyblue;
+}
+
+.flash-wrap img {
+    display: none;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a,
+.rm-submenu-button {
+    background-color: @back-color-footer-headerlinks;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+html {
+    background-color: @back-color;
+    color: @text-color2;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a {
+    color: @text-color;
+}
+
+.toc a,
+.previous a,
+.next a,
+.breadcrumb-list a {
+    text-decoration: none;
+    color: @text-color2;
+}
+
+.selected a {
+    color: @link-hover;
+    text-decoration: underline;
+    margin-left: 10px;
+}

@@ -1,0 +1,73 @@
+@import url(light.less);
+
+@back-color: rgba(250, 250, 250, 0.3);
+@back-color-footer-headerlinks: rgba(0, 0, 0, 0.5);
+@link-hover: rgba(0, 0, 0, 0.5);
+@text-color: black;
+@text-color2: black;
+
+html {
+    background-image: url(../img/background_paper.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana;
+    width: 99%;
+}
+
+main {
+    background-color: @back-color;
+    color: @text-color;
+    font-size: 20px;
+}
+
+ /*
+html a {
+    color: lightskyblue;
+}
+
+
+.flash-wrap img {
+    display: none;
+}
+*/
+
+.selected {
+    text-decoration: underline;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a,
+.rm-submenu-button {
+    background-image: url(../img/background_wave.jpg);
+    color: @text-color;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+html {
+    background-color: @back-color;
+    color: @text-color2;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a {
+    color: @text-color;
+}
+
+.toc a,
+.previous a,
+.next a,
+.breadcrumb-list a {
+    text-decoration: none;
+    color: @text-color2;
+}
+
+.selected a {
+    color: @link-hover;
+    text-decoration: underline;
+    margin-left: 10px;
+}

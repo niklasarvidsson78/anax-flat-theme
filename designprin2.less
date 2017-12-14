@@ -1,0 +1,83 @@
+@import url(light.less);
+
+@back-color: rgba(255, 255, 255, 0.5);
+@back-color-footer-headerlinks: rgba(255, 255, 255, 0.1);
+@link-hover: rgba(101, 0, 189, 1);
+@text-color: black;
+@text-color2: black;
+@fontfamily-footer-header:  Courier New;
+
+
+html {
+    background-image: url(../img/moving.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Lucida Console;
+}
+
+main {
+    background-color: @back-color;
+    color: @text-color;
+    font-size: 18px;
+}
+
+html a {
+    color: rgba(255, 51, 51, 1);
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+.flash-wrap img,
+.site-logo-text-icon {
+    display: none;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a,
+.rm-submenu-button {
+    background-color: @back-color-footer-headerlinks;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: @fontfamily-footer-header;
+}
+
+html {
+    background-color: @back-color;
+    color: @text-color2;
+}
+
+.footer-column,
+.site-footer,
+.rm-desktop li a {
+    color: @text-color;
+}
+
+.rm-desktop li {
+    background-color: @back-color;
+}
+
+@navbarItemBgColor: @back-color;
+
+.toc a,
+.previous a,
+.next a,
+.breadcrumb-list a {
+    text-decoration: none;
+    color: @text-color2;
+}
+
+.selected a,
+.site-logo-text a {
+    color: @link-hover;
+    text-decoration: underline;
+}
